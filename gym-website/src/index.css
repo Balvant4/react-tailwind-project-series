@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .primery-btn {
+    @apply inline-block rounded-md bg-primery hover:bg-primery/70 duration-200 py-2 px-5 text-white text-xl font-bold
+  }
+}
+
+.active {
+  color: #fe9808;
+}
