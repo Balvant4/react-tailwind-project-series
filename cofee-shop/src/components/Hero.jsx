@@ -4,9 +4,9 @@ import Button from "../smallcomponents/Button";
 const Hero = () => {
   return (
     <>
-      <div className="bg-body1  text-white grid md:grid-cols-2  items-center  sm:min-h-[600px] lg:px-10 px-4">
+      <div className="bg-body1  text-white grid md:grid-cols-2  items-center  sm:min-h-[600px] lg:px-10">
         {/* Left Section */}
-        <div className="lg:order-1 order-2 items-center flex flex-col lg:items-start">
+        <div className="lg:order-1 order-2 items-center flex flex-col ">
           <h1 className="lg:text-[4rem] pb-5 text-[3rem] font-bold lg:leading-[5rem] leading-[4rem]">
             We serve the richest{" "}
             <span className="text-[#854D3D] font-cursive ">Coffee</span> in the

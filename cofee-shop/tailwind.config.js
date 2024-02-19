@@ -10,7 +10,7 @@ export default {
         body1: "#270c03",
         cardcolor: "#f3edeb",
         cardh1color: "#625f5e",
-        footercolor: "#755948",
+        footercolor: "#775b49",
         button: "#3d2517",
       },
       fontFamily: {

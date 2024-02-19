@@ -7,3 +7,8 @@
 .active {
   color: white;
 }
+
+.slick-slider>div {
+
+  /* Adjust as needed */
+}

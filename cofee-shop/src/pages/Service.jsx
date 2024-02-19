@@ -2,7 +2,7 @@ import React from "react";
 import ServiceCard from "../components/ServiceCard";
 import ServiceBanner from "../components/ServiceBanner";
 import AppStore from "../components/AppStore";
-import Testmonials from "../components/Testmonials";
+import Testmonials from "../components/Testmonial/Testmonials";
 
 const Service = () => {
   return (
@@ -11,7 +11,7 @@ const Service = () => {
         <div>
           <h1 className=" font-cursive text-4xl">Best Coffee for you</h1>
         </div>
-        <div className=" flex flex-wrap justify-start px-2 md:items-center gap-10 pt-10">
+        <div className="px-2 flex flex-col md:flex-row sm:flex-wrap overflow-hidden  gap-10 pt-10">
           <ServiceCard name="Espresso" />
           <ServiceCard name="Americano" />
           <ServiceCard name="Cappuccino" />
@@ -21,6 +21,7 @@ const Service = () => {
           <ServiceBanner />
           <AppStore />
         </div>
+        <Testmonials />
       </div>
     </>
   );
