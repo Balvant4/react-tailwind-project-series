@@ -12,20 +12,21 @@ const Navbar = () => {
     setToggle((prev) => !prev);
   };
 
-  const handleLinkClick = () => {
-    setToggle(false);
+  const handleLinkClick = (event) => {
+    event.stopPropagation(); // Prevent click event from reaching the link
+    setToggle(false); // Hide the mobile menu
   };
 
   return (
-    <div className="bg-primary font-sans text-dimWhite w-full flex py-6 px-5  items-center justify-between navbar">
-      <div>
+    <div className="bg-primary font-sans text-dimWhite w-full flex py-6 px-5  items-center justify-between navbar ">
+      <div data-aos="fade-right">
         <NavLink to={navigationItems[0].to}>
           <h1 className=" font-cursive text-white text-3xl">Coffee cafe</h1>
         </NavLink>
       </div>
 
       {/* Desktop Navigation */}
-      <ul className="list-none sm:flex hidden ">
+      <ul className="list-none sm:flex hidden " data-aos="fade-down">
         {navigationItems.map((link, index) => (
           <li
             key={index}
@@ -35,7 +36,10 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <button className=" md:flex hidden items-center gap-2 px-4 py-2 text-white rounded-full bg-headerside">
+      <button
+        className=" md:flex hidden items-center gap-2 px-4 py-2 text-white rounded-full bg-headerside"
+        data-aos="fade-left"
+      >
         Order
         <PiCoffeeLight className=" text-2xl" />
       </button>

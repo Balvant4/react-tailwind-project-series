@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <footer class=" bg-footercolor  text-white font-sans">
-        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="container md:px-5 px-0 md:py-20 py-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
           {/* Footer text last section */}
           <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
             <div class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -20,9 +20,9 @@ const Footer = () => {
               Clients.
             </p>
           </div>
-          <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+          <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left order-first">
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <h2 class="   tracking-widest text-xl mb-3">LINKS</h2>
+              <h2 class="   tracking-widest text-2xl font-bold mb-3">LINKS</h2>
               <nav class="list-none mb-10 ">
                 {navigationItems.map((link, index) => (
                   <li
@@ -34,7 +34,7 @@ const Footer = () => {
                 ))}
               </nav>
             </div>
-            <div class="  lg:w-1/4 md:w-1/2 w-full px-4">
+            <div class="  lg:w-1/4 md:w-1/2 w-full px-4 mb-10">
               <Footercompo
                 heading="Names"
                 h1="Meet"
@@ -43,7 +43,7 @@ const Footer = () => {
                 h4="ravi"
               />
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-10">
               <Footercompo
                 heading="Changes"
                 h1="LOREM"
@@ -52,16 +52,14 @@ const Footer = () => {
                 h4="LOREM"
               />
             </div>
-            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-              <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                <Footercompo
-                  heading="Importants"
-                  h1="LOREM"
-                  h2="LOREM"
-                  h3="LOREM"
-                  h4="LOREM"
-                />
-              </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-10">
+              <Footercompo
+                heading="Importants"
+                h1="LOREM"
+                h2="LOREM"
+                h3="LOREM"
+                h4="LOREM"
+              />
             </div>
           </div>
         </div>

@@ -19,13 +19,16 @@ const ServiceBanner = () => {
   return (
     <>
       <div style={BgImage}>
-        <div className=" font-sans container w-full mt-10 min-h-[550px] flex justify-center items-center py-12 sm:py-0">
+        <div className=" font-sans container w-full mt-10 min-h-[550px] flex justify-center items-center py-12 sm:py-0 ">
           <div className=" grid sm:grid-cols-2 grid-cols-1 gap-6">
-            <div>
+            <div data-aos="fade-right">
               <img src={cofflewhite} alt="" />
             </div>
 
-            <div className=" flex flex-col justify-center gap-6 sm:pt-0">
+            <div
+              className=" flex flex-col justify-center gap-6 sm:pt-0"
+              data-aos="zoom-in"
+            >
               <h1 className=" font-cursive font-bold text-3xl sm:text-4xl">
                 Premium Blen Coffee
               </h1>

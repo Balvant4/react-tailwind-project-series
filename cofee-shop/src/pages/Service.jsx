@@ -8,7 +8,7 @@ const Service = () => {
   return (
     <>
       <div className="flex flex-col items-center pt-5 ">
-        <div>
+        <div data-aos="fade-down-right">
           <h1 className=" font-cursive text-4xl">Best Coffee for you</h1>
         </div>
         <div className="px-2 flex flex-col md:flex-row sm:flex-wrap overflow-hidden  gap-10 pt-10">

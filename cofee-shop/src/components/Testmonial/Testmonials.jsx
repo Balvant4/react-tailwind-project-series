@@ -34,11 +34,14 @@ const Testimonials = () => {
     ],
   };
   return (
-    <div className=" lg:w-3/4 w-11/12 m-auto mb-10 mt-10 font-sans">
-      <h1 className=" font-cursive font-bold text-4xl flex justify-center">
+    <div className=" lg:w-3/4 w-[80%] m-auto mb-10 mt-10 font-sans">
+      <h1
+        className=" font-cursive font-bold text-4xl flex justify-center"
+        data-aos="fade-down-right"
+      >
         Testmonials
       </h1>
-      <div className="mt-20 ">
+      <div className="mt-20">
         <Slider {...settings} className="slick-slider-custom">
           {data.map((d) => (
             <div key={d.name} className="px-2 ">
