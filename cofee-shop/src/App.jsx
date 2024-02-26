@@ -4,13 +4,6 @@ import Home from "./pages/Home";
 import Service from "./pages/Service";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer/Footer";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init({
-  duration: 1000,
-  offset: 300,
-});
 
 function App() {
   return (

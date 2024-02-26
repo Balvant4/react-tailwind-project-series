@@ -18,15 +18,18 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-primary font-sans text-dimWhite w-full flex py-6 px-5  items-center justify-between navbar ">
-      <div data-aos="fade-right">
+    <div
+      className="bg-primary font-sans text-dimWhite w-full flex py-6 px-5  items-center justify-between navbar "
+      data-aos="fade-down"
+    >
+      <div>
         <NavLink to={navigationItems[0].to}>
           <h1 className=" font-cursive text-white text-3xl">Coffee cafe</h1>
         </NavLink>
       </div>
 
       {/* Desktop Navigation */}
-      <ul className="list-none sm:flex hidden " data-aos="fade-down">
+      <ul className="list-none sm:flex hidden ">
         {navigationItems.map((link, index) => (
           <li
             key={index}
@@ -36,10 +39,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <button
-        className=" md:flex hidden items-center gap-2 px-4 py-2 text-white rounded-full bg-headerside"
-        data-aos="fade-left"
-      >
+      <button className=" md:flex hidden items-center gap-2 px-4 py-2 text-white rounded-full bg-headerside">
         Order
         <PiCoffeeLight className=" text-2xl" />
       </button>
