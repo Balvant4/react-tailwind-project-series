@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../smallcomponents/Button";
+import { coffee2 } from "../../public/index";
 
 const Hero = () => {
   return (
@@ -20,7 +21,7 @@ const Hero = () => {
         {/* Right Section */}
         <div className="lg:order-2 order-1 flex items-center">
           <div className=" xl:absolute right-20 " data-aos="zoom-in">
-            <img src="../../public/coffee2.png" alt="" />
+            <img src={coffee2} alt="" />
           </div>
         </div>
       </div>

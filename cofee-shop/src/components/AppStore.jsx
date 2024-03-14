@@ -1,10 +1,8 @@
 import React from "react";
-import Coffeebeans from "../../public/website/coffee-beans-bg.png";
-import Playstore from "../../public/website/play_store.png";
-import Appstore from "../../public/website/app_store.png";
+import { coffeebeansbg, playstore, appstore } from "../../public/index";
 
 const BgImage = {
-  backgroundImage: `url(${Coffeebeans})`,
+  backgroundImage: `url(${coffeebeansbg})`,
   backgroundColor: "#270c03",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -26,8 +24,8 @@ const AppStore = () => {
               Coffee Cafe is available for Android and IOS
             </h1>
             <div className=" md:w-[12rem] lg:w-[15rem] w-[10rem] flex md:flex-row pb-5">
-              <img src={Playstore} alt="" />
-              <img src={Appstore} alt="" />
+              <img src={playstore} alt="" />
+              <img src={appstore} alt="" />
             </div>
           </div>
           <div></div>

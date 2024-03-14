@@ -1,12 +1,12 @@
 import React from "react";
-import BgTexture from "../../public/website/coffee-texture.jpg";
-import cofflewhite from "../../public/coffee-white.png";
+import { coffeetexture, whitecoffee } from "../../public/index";
+
 import { IoLockClosedOutline } from "react-icons/io5";
 import { FaMugHot } from "react-icons/fa";
 import { PiThermometerColdFill } from "react-icons/pi";
 
 const BgImage = {
-  backgroundImage: `url(${BgTexture})`,
+  backgroundImage: `url(${coffeetexture})`,
   backgroundColor: "#270c03",
   backgroundPosition: "center",
   backgroundRepeat: "no-repeat",
@@ -22,7 +22,7 @@ const ServiceBanner = () => {
         <div className=" font-sans container w-full mt-10 min-h-[550px] flex justify-center items-center py-12 sm:py-0 ">
           <div className=" grid sm:grid-cols-2 grid-cols-1 gap-6">
             <div data-aos="fade-right">
-              <img src={cofflewhite} alt="" />
+              <img src={whitecoffee} alt="" />
             </div>
 
             <div

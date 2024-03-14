@@ -1,5 +1,5 @@
 import React from "react";
-import biryani2 from "../../public/food-images/biryani2.png";
+import { biryani2, biryani5 } from "../../public/index";
 import Servicebox from "../components/Servicebox";
 import { GrSecure } from "react-icons/gr";
 import { IoFastFood } from "react-icons/io5";
@@ -29,11 +29,7 @@ const Service = () => {
       {/* second services section */}
       <div className=" grid md:grid-cols-2 grid-cols-1 pb-20">
         <div>
-          <img
-            className=" lg:absolute  pt-10"
-            src="../../public/food-images/biryani5.png"
-            alt=""
-          />
+          <img className=" lg:absolute  pt-10" src={biryani5} alt="" />
         </div>
         <div className=" mt-10 p-4">
           <div className=" md:pr-8">

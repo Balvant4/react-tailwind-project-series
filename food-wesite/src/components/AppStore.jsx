@@ -1,4 +1,5 @@
 import React from "react";
+import { appstore, playstore, mobilebike } from "../../public/index";
 
 const AppStore = () => {
   return (
@@ -9,12 +10,12 @@ const AppStore = () => {
             Food is Available for Android and IOS
           </h1>
           <div className=" md:w-[12rem] lg:w-[15rem] w-[10rem] flex md:flex-row pb-5">
-            <img src="../../public/food-images/app_store.png" alt="" />
-            <img src="../../public/food-images/play_store.png" alt="" />
+            <img src={appstore} alt="" />
+            <img src={playstore} alt="" />
           </div>
         </div>
         <div className="col-span-5 ">
-          <img src="../../public/food-images/mobile_bike.gif" alt="" />
+          <img src={mobilebike} alt="" />
         </div>
       </div>
     </>

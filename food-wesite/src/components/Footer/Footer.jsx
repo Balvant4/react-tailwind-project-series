@@ -5,6 +5,7 @@ import { BsInstagram } from "react-icons/bs";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import Footercompo from "../Footercompo";
+import { foodlogo } from "../../../public/index";
 
 const Footer = () => {
   return (
@@ -12,11 +13,7 @@ const Footer = () => {
       <div className=" font-poppins bg-primary text-white lg:p-20 p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4   ">
         <div>
           <div className="flex items-center gap-3">
-            <img
-              className=" w-[4rem]"
-              src="../../public/food-images/food-logo.png"
-              alt=""
-            />
+            <img className=" w-[4rem]" src={foodlogo} alt="" />
             <h1 className=" font-bold text-2xl">FOODIE</h1>
           </div>
           <p className="">

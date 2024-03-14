@@ -1,27 +1,24 @@
 import React from "react";
-import bgImg from "../../public/food-images/vector3.png";
-import Food1 from "../../public/food-images/biryani2.png";
-import Food2 from "../../public/food-images/biryani3.png";
-import Food3 from "../../public/food-images/biryani5.png";
+import { biryani2, biryani3, biryani5, vector3 } from "../../public/index";
 import Service from "./Service";
 
 const ImageList = [
   {
     id: 1,
-    img: Food1,
+    img: biryani2,
   },
   {
     id: 2,
-    img: Food2,
+    img: biryani3,
   },
   {
     id: 3,
-    img: Food3,
+    img: biryani5,
   },
 ];
 
 const bgimage = {
-  backgroundImage: `url(${bgImg})`,
+  backgroundImage: `url(${vector3})`,
   backgroundPosition: "center",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
@@ -30,7 +27,7 @@ const bgimage = {
 };
 
 const Home = () => {
-  const [image, setImage] = React.useState(Food1);
+  const [image, setImage] = React.useState(biryani2);
   return (
     <>
       <div
